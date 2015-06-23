@@ -7,18 +7,17 @@ Usage
 
 **Simple Way**  
 
-In your model, set SpringbokTrait and add a member variable named "convert_attributes".
+In your model, set Springbok instead of Eloquent and add a member variable named "convert_attributes".
+(Springbok extends Eloquent.)
 
     <?php
     
-    use \Sukohi\Springbok\SpringbokTrait;
-    class Appointment extends Eloquent {
-    
-        use SpringbokTrait;
+    use \Sukohi\Springbok\Springbok;
+    class Appointment extends Springbok {
     
         protected $convert_attributes = [
-            'started_at' => 'date',             // You can get or set the value as date
-            'member_ids' => 'json'             // You can get or set the value as json
+            'started_at' => 'date',
+            'member_ids' => 'json'
         ];
     
     }

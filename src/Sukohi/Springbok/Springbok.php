@@ -1,7 +1,7 @@
 <?php namespace Sukohi\Springbok;
 
 use \Carbon\Carbon;
-trait SpringbokTrait {
+class Springbok extends \Eloquent {
 
     public function __get($name) {
 
