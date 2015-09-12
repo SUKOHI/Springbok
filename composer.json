@@ -1,6 +1,6 @@
 {
     "name": "sukohi/springbok",
-    "description": "",
+    "description": "A PHP package mainly developed for Laravel to manage specific accessors and mutators for Json and Date(Carbon).",
     "authors": [
         {
             "name": "Sukohi",
@@ -9,14 +9,10 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "laravel/framework": "~5.0"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
-        "psr-0": {
+        "psr-4": {
             "Sukohi\\Springbok\\": "src/"
         }
     },
