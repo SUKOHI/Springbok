@@ -1,7 +1,21 @@
 # Springbok
 A PHP package mainly developed for Laravel to manage specific accessors and mutators for Json and Date(Carbon).  
+(This is for Laravel 4.2. [For Laravel 5+](https://github.com/SUKOHI/Springbok))  
 (So you can skip to add accessors and mutators for date and json.)
 
+Installation
+====
+
+Add this package name in composer.json
+
+    "require": {
+      "sukohi/springbok": "1.*"
+    }
+
+Execute composer command.
+
+    composer update
+    
 Usage
 ====
 
